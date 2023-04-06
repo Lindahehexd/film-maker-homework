@@ -73,7 +73,7 @@ export default theme;
 
 以下將針對實作的 features 做說明，共 4 個項目，每個項目皆有其目標與應對方法:
 
-Header :
+**Header** :
 
 - 目標:
 
@@ -85,7 +85,7 @@ Header :
   - 使用 useState 去判斷當前 windowScrollY 的參數，如果>300 則隱藏導覽列，反之則顯示。
   - 為了達到畫面流暢，於 CSS 新增 transition。
 
-ShuffleCards :
+**ShuffleCards** :
 
 - 目標:
   - 卡片點擊時觸發切換動畫、並使用透視視角確保視覺接近真實視角。
@@ -110,7 +110,7 @@ ShuffleCards :
     }
     ```
 
-Video:
+**Video**:
 
 - 目標:
 
@@ -123,7 +123,7 @@ Video:
     - 第一個 useEffect 控制可視範圍內 30%~70%內的動作邏輯 (進入後播放，離開後暫停，返回後播放)。
     - 第二個 useEffect 去控制 可視範圍外 (>100%) 的動作邏輯 (若影片不在可視範圍內，則影片秒數為 0)。
 
-ScrollCard:
+**ScrollCard**:
 
 - 目標:
   - 當滑鼠進入該區塊時，效果滾動的效果為橫向移動。
