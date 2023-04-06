@@ -77,9 +77,9 @@ Header :
 
 - 目標:
 
-  - 往下滑動 scrollTop > 300px 後隱藏 Header
-  - 並於滾輪向上捲動時觸發顯示 Header
-  - 隱藏及顯示的過程請加上 transition 讓畫面流暢
+  - 往下滑動 scrollTop > 300px 後隱藏 Header。
+  - 並於滾輪向上捲動時觸發顯示 Header。
+  - 隱藏及顯示的過程請加上 transition 讓畫面流暢。
 
 - 方法:
   - 使用 useState 去判斷當前 windowScrollY 的參數，如果>300 則隱藏導覽列，反之則顯示。
@@ -87,17 +87,18 @@ Header :
 
 ShuffleCards :
 
-- 目標
+- 目標:
   - 卡片點擊時觸發切換動畫、並使用透視視角確保視覺接近真實視角。
-- 方法
+  
+- 方法:
 
   - 邏輯
 
-    - 針對每個卡片，使用 CSS keyframe 製作兩個動畫
-    - 通過更改狀態（isMoved / isCard2Moved / index）來觸發動畫
-    - 使用三元式判斷: 當點擊時，各別觸發動畫，並在重新點擊時，執行另外一個動畫
-    - 點擊當下，zindex 會切換達到卡片上下效果
-    - 為避免初始渲染會執行動畫，另外這一個 useState 初始值為 0
+    - 針對每個卡片，使用 CSS keyframe 製作兩個動畫。
+    - 通過更改狀態（isMoved / isCard2Moved / index）來觸發動畫。
+    - 使用三元式判斷: 當點擊時，各別觸發動畫，並在重新點擊時，執行另外一個動畫。
+    - 點擊當下，zindex 會切換達到卡片上下效果。
+    - 為避免初始渲染會執行動畫，另外這一個 useState 初始值為 0。
 
   - 點擊卡片後:
     ```
@@ -113,8 +114,8 @@ Video:
 
 - 目標:
 
-  - Entry ratio 大於 30% 後播放影片, 小於時主動暫停播放
-  - 當 invisible 時，主動將播放進度 reset 回 time = 0
+  - Entry ratio 大於 30% 後播放影片, 小於時主動暫停播放。
+  - 當 invisible 時，主動將播放進度 reset 回 time = 0。
 
 - 方法:
   - 使用 useRef 去控制 Vedio Block 的 DOM 元素。
@@ -125,9 +126,9 @@ Video:
 ScrollCard:
 
 - 目標:
-  - 當滑鼠進入該區塊時，效果滾動的效果為橫向移動
+  - 當滑鼠進入該區塊時，效果滾動的效果為橫向移動。
 - 方法:
-  - 使用 useRef 去控制區塊內的 DOM 元素，並使用 onWheel 去監聽滾動事件，
+  - 使用 useRef 去控制區塊內的 DOM 元素，並使用 onWheel 去監聽滾動事件。
   - 當滾輪向上滾動時，容器元素向左滾動 30 像素，向下滾動時，容器元素向右滾動 30 像素，達到橫向滾動的效果。
   - CSS 方面，使用 overScrollX + flexShrink = 0 實現區塊內圖片不會被縮減，超過則會顯示滾輪。
   - 用 display:none 的方式隱藏滾動條 (overflowX 如果用 hidden 會無法用 contain) 然後用 cooverscrollBehavior="contain" 限制區塊外面(瀏覽器)的垂直滾動，因此就能達到區塊內橫向滾動，而瀏覽器不會同時垂直滾動的效果。
