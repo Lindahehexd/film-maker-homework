@@ -87,7 +87,6 @@ const ShuffleCard = () => {
           } 0.8s ease-out forwards`}
           h="474px"
           w="713px"
-          backgroundColor="green.300"
           borderRadius="20px"
           boxShadow="10px 10px 25px rgba(0,0,0,0.25) "
           position="relative"
@@ -105,7 +104,6 @@ const ShuffleCard = () => {
           } 0.8s  ease-out forwards`}
           h="320px"
           w="811px"
-          backgroundColor="purple.300"
           borderRadius="20px"
           boxShadow="10px 10px 25px rgba(0,0,0,0.25) "
           position="relative"
