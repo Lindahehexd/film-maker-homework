@@ -23,9 +23,9 @@
 - 右卡片尺寸: 811 x 320 (px)
 
 - 其他設定:
-  -陰影: Radius: 25px
-  -Offset: 10px, 10px
-  -rgba(0, 0, 0, 0.25)   
+  - 陰影 Radius: 25px
+  - Offset: 10px, 10px
+  - rgba(0, 0, 0, 0.25)   
 
 ### 影片
 
@@ -38,7 +38,7 @@
 ### 滾動區塊
 
 - 圖片: 400 x 800 ( gap: 30px )
-- 邊距: marin left = 30px / mb: 273px
+- 邊距: margin left: 30px / margin bottom: 273px
 
 ## 實作部分說明
 
